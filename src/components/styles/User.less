@@ -1,0 +1,45 @@
+@import 'variables.less';
+
+.user-card {
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+    border: 1px solid rgb(227, 226, 226);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    .user-card_avatar {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+.user-card:hover {
+    box-shadow: 4px 4px rgba(57, 57, 57, 0.3);
+    top: -4px;
+    left: -4px;
+}
+
+.link, link:visited {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: @tablet) {
+    .user-card{
+      height: 150px;
+      width: 250px;
+      .user-card_avatar {
+        height: 90px;
+        width: 90px;
+        
+    }
+    }
+    
+  }

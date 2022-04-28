@@ -1,0 +1,117 @@
+@import 'variables.less'; 
+
+.card-container {
+    display: flex;
+    flex-direction: column;      
+} 
+.info {
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 50px;   
+    height: 400px;
+    
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.btn {
+    padding: 10px;
+    text-decoration: none;
+    max-width: 90px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.btn:hover {
+    box-shadow: 4px 4px rgba(57, 57, 57, 0.3);
+    top: -4px;
+    left: -4px;
+  }
+.info-name-email{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        margin: 20px 0;
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+@media (max-width: @laptop) {
+    .card-container{
+        display:block;
+    }
+    .info {
+        width: 700px;
+        height: 350px;     
+        
+    } 
+    .info-name-email {
+        .h1 {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: 400;
+            }
+    }
+    .avatar {
+        height: 200px;
+        width: 200px;
+        align-self: baseline;
+        
+    }
+}
+@media (max-width: @tablet) {
+    
+    .card-container {
+        text-align: center;
+    }
+    .info {        
+        padding: 10px;
+        width: 400px;
+        height: 350px;
+        grid-template-columns: 1fr;
+        
+    } 
+    .avatar {
+        height: 150px;
+        width: 150px;
+        
+        
+    }
+
+}
+@media (max-width: @phone) {
+    .info {
+        
+        width: 250px;
+        height: 250px;              
+    } 
+    .avatar {
+        height: 100px;
+        width: 100px;
+               
+    }
+    .info-name-email{
+        padding: 10px;
+        h1{
+            font-size: 20px;
+           
+        }
+    }
+}

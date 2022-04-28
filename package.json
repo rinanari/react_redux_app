@@ -1,0 +1,43 @@
+{
+  "name": "react-redux-try",
+  "version": "1.0.0",
+  "description": "course for react and redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --history-api-fallback"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack"
+  ],
+  "author": "Rina Nau",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less-loader": "^10.2.0",
+    "remote-redux-devtools": "^0.5.16",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.26.1",
+    "babel-loader": "^8.2.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1"
+  }
+}
