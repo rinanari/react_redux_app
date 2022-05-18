@@ -6,6 +6,7 @@ const SET_FETCH_ERROR = "SET_FETCH_ERROR"
 const defaultState = {
     
     data: {},
+   
     isFetchError: false 
 }
 

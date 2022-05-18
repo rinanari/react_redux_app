@@ -7,8 +7,8 @@ const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE'
 import '../components/actions/users'
 
 const defaultState = {
-    data: [],
-    current_page: 1,
+    data: [],    
+    currentPage: 1,
     total_pages: 0,
     isFetchError: false    
 }
@@ -24,7 +24,7 @@ export default function usersReducer(state = defaultState, action) {
         case SET_CURRENT_PAGE:
             return {
                 ...state,
-                current_page: action.payload
+                currentPage: action.payload
             }
             case SET_FETCH_ERROR:
                 return {
@@ -43,5 +43,8 @@ export const setUsers = (users) => (
 export const setCurrentPage = (page) => (
     {type:SET_CURRENT_PAGE, payload: page }
 )
+export const setTotalPages = (totalPages) => {
+    ({type: SET_TOTAL_PAGES, payload: totalPages})
+}
 export const setFetchError = (bool) => 
 ({type:SET_FETCH_ERROR, payload:bool})
