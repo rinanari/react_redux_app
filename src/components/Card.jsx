@@ -11,7 +11,7 @@ const Card = () => {
     const history = useNavigate()
     const {id} = useParams()
     const user = useSelector(state => state.user.data)
-    const isFetchError = useSelector(state => state.users.isFetchError)
+    
 
     useEffect(() => {
         dispatch(getCurrentUser(id))
@@ -20,14 +20,8 @@ const Card = () => {
     return (
         
         <div className='card-container'>
-            { isFetchError &&
-            <div className="alert alert-danger" role="alert">
-                Произошла ошибка! Кажется, URL неверный!
-            </div>
-            }
-            <div className="btn">
-                <a onClick={()=>history(-1)} className="back-btn">Back</a>
-            </div>
+            
+            
             <div className="info">
                 <div className="avatar-container">
                     <img src={user.avatar} className='avatar' alt="Аватар пользователя" />
